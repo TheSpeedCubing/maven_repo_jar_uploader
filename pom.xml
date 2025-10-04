@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.md5</groupId>
+    <artifactId>bungeecord-chat</artifactId>
+    <version>1.8-SNAPSHOT</version>
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>speedcubing-public</id>
+            <url>https://repo.speedcubing.top/repository/maven-public/</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>speedcubing-public-projects-release</id>
+            <url>https://repo.speedcubing.top/repository/maven-public-projects-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>speedcubing-public-projects-snapshot</id>
+            <url>https://repo.speedcubing.top/repository/maven-public-projects-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
