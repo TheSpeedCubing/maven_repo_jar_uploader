@@ -24,11 +24,11 @@
     <distributionManagement>
         <repository>
             <id>speedcubing-public-projects-release</id>
-            <url>https://repo.speedcubing.top/repository/maven-public-projects-release/</url>
+            <url>https://repo.speedcubing.top/repository/maven-public-test/</url>
         </repository>
         <snapshotRepository>
             <id>speedcubing-public-projects-snapshot</id>
-            <url>https://repo.speedcubing.top/repository/maven-public-projects-snapshot/</url>
+            <url>https://repo.speedcubing.top/repository/maven-public-test/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
