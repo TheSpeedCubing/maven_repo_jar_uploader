@@ -46,4 +46,11 @@ jobs:
 
     - name: Deploy to Nexus
       run: |
-        mvn deploy -DskipTests
+        mvn deploy:deploy-file \
+          -DgroupId=net.md-5 \
+          -DartifactId=bungeecord-chat \
+          -Dversion=1.8-SNAPSHOT \
+          -Dpackaging=jar \
+          -Dfile=target/bungeecord-chat-1.8-SNAPSHOT.jar \
+          -DrepositoryId=speedcubing-public-projects-snapshot \
+          -Durl=https://repo.speedcubing.top/repository/maven-public-test/
