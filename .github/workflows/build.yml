@@ -44,13 +44,35 @@ jobs:
         </settings>
         EOF
 
-    - name: Deploy to Nexus
+    - name: Deploy to Nexus 1
       run: |
         mvn deploy:deploy-file \
           -DgroupId=net.md-5 \
-          -DartifactId=bungeecord-api \
+          -DartifactId=bungeecord-config \
           -Dversion=1.8-SNAPSHOT \
           -Dpackaging=jar \
-          -Dfile=target/bungeecord-api-1.8-20160221.214655-126.jar \
+          -Dfile=target/bungeecord-config-1.8-20160221.214615-126.jar \
+          -DrepositoryId=speedcubing-public-projects-snapshot \
+          -Durl=https://repo.speedcubing.top/repository/maven-public-test/
+
+    - name: Deploy to Nexus 2
+      run: |
+        mvn deploy:deploy-file \
+          -DgroupId=net.md-5 \
+          -DartifactId=bungeecord-event \
+          -Dversion=1.8-SNAPSHOT \
+          -Dpackaging=jar \
+          -Dfile=target/bungeecord-event-1.8-20160221.214626-126.jar \
+          -DrepositoryId=speedcubing-public-projects-snapshot \
+          -Durl=https://repo.speedcubing.top/repository/maven-public-test/
+
+    - name: Deploy to Nexus 3
+      run: |
+        mvn deploy:deploy-file \
+          -DgroupId=net.md-5 \
+          -DartifactId=bungeecord-protocol \
+          -Dversion=1.8-SNAPSHOT \
+          -Dpackaging=jar \
+          -Dfile=target/bungeecord-protocol-1.8-20160221.214639-126.jar \
           -DrepositoryId=speedcubing-public-projects-snapshot \
           -Durl=https://repo.speedcubing.top/repository/maven-public-test/
