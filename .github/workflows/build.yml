@@ -51,6 +51,6 @@ jobs:
           -DartifactId=bungeecord-chat \
           -Dversion=1.8-SNAPSHOT \
           -Dpackaging=jar \
-          -Dfile=target/bungeecord-chat-1.8-SNAPSHOT.jar \
+          -Dfile=target/bungeecord-chat-1.8-20160221.214602-128-SNAPSHOT.jar \
           -DrepositoryId=speedcubing-public-projects-snapshot \
           -Durl=https://repo.speedcubing.top/repository/maven-public-test/
