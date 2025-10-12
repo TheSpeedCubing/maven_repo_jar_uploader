@@ -47,32 +47,10 @@ jobs:
     - name: Deploy to Nexus 1
       run: |
         mvn deploy:deploy-file \
-          -DgroupId=net.md-5 \
-          -DartifactId=bungeecord-config \
-          -Dversion=1.8-SNAPSHOT \
+          -DgroupId=net.kyori \
+          -DartifactId=coffee \
+          -Dversion=1.0.0-SNAPSHOT \
           -Dpackaging=jar \
-          -Dfile=target/bungeecord-config-1.8-20160221.214615-126.jar \
-          -DrepositoryId=speedcubing-public-projects-snapshot \
-          -Durl=https://repo.speedcubing.top/repository/maven-public-test/
-
-    - name: Deploy to Nexus 2
-      run: |
-        mvn deploy:deploy-file \
-          -DgroupId=net.md-5 \
-          -DartifactId=bungeecord-event \
-          -Dversion=1.8-SNAPSHOT \
-          -Dpackaging=jar \
-          -Dfile=target/bungeecord-event-1.8-20160221.214626-126.jar \
-          -DrepositoryId=speedcubing-public-projects-snapshot \
-          -Durl=https://repo.speedcubing.top/repository/maven-public-test/
-
-    - name: Deploy to Nexus 3
-      run: |
-        mvn deploy:deploy-file \
-          -DgroupId=net.md-5 \
-          -DartifactId=bungeecord-protocol \
-          -Dversion=1.8-SNAPSHOT \
-          -Dpackaging=jar \
-          -Dfile=target/bungeecord-protocol-1.8-20160221.214639-126.jar \
+          -Dfile=target/coffee-1.0.0-20210413.213422-25.jar \
           -DrepositoryId=speedcubing-public-projects-snapshot \
           -Durl=https://repo.speedcubing.top/repository/maven-public-test/
