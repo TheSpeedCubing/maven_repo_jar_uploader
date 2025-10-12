@@ -48,9 +48,9 @@ jobs:
       run: |
         mvn deploy:deploy-file \
           -DgroupId=net.md-5 \
-          -DartifactId=bungeecord-chat \
+          -DartifactId=bungeecord-api \
           -Dversion=1.8-SNAPSHOT \
           -Dpackaging=jar \
-          -Dfile=target/bungeecord-chat-1.8-20160221.214602-128-SNAPSHOT.jar \
+          -Dfile=target/bungeecord-api-1.8-20160221.214655-126.jar \
           -DrepositoryId=speedcubing-public-projects-snapshot \
           -Durl=https://repo.speedcubing.top/repository/maven-public-test/
