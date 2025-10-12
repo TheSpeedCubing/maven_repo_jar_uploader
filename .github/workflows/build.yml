@@ -52,5 +52,6 @@ jobs:
           -Dversion=1.0.0-SNAPSHOT \
           -Dpackaging=jar \
           -Dfile=target/coffee-1.0.0-20210413.213422-25.jar \
+          -DpomFile=target/pom.xml \
           -DrepositoryId=speedcubing-public-projects-snapshot \
           -Durl=https://repo.speedcubing.top/repository/maven-public-test/
